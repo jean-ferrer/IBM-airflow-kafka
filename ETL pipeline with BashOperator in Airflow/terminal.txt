@@ -1,0 +1,19 @@
+1. Open a terminal and create a directory structure for the staging area as follows: "/home/project/airflow/dags/finalassignment/staging"
+
+sudo mkdir -p /home/project/airflow/dags/finalassignment/staging
+
+
+2. Execute the following command to give appropriate permission to the directories.
+
+sudo chmod -R 777 /home/project/airflow/dags/finalassignment
+
+
+3. Download the data set from the source to the following destination using the curl command.
+
+sudo curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz -o /home/project/airflow/dags/finalassignment/tolldata.tgz
+
+
+4. Run the commands below to submit the DAG that was previously created.
+
+export AIRFLOW_HOME=/home/project/airflow
+cp ETL_toll_data.py $AIRFLOW_HOME/dags
