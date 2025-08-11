@@ -68,7 +68,7 @@ download_task >> untar_task >> [extract_from_csv_task, extract_from_tsv_task, ex
 
 1.  Create the staging directory: `sudo mkdir -p /home/project/airflow/dags/python_etl/staging`
 2.  Set permissions: `sudo chmod -R 777 /home/project/airflow/dags/python_etl`
-3.  Copy the DAG file to your Airflow DAGs folder. The pipeline will handle data download automatically.
+3.  Copy the DAG file to your Airflow DAGs folder and enable it in the Airflow UI. The pipeline will handle data download automatically.
 
 -----
 
